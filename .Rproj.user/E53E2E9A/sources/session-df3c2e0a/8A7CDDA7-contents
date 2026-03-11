@@ -44,8 +44,7 @@ ui <- fluidPage(
                    column(8, offset = 2,
                           br(),
                           h2("Daly Waters Rainfall Analysis (1889–2026)"),
-                          p("This dashboard provides a visual history of rainfall recorded at Daly Waters, Northern Territory,
-                            using over 140 years of daily records."),
+                          p("This dashboard provides a visual history of rainfall recorded at Daly Waters, Northern Territory."),
 
                           hr(),
                           p("Financial year rainfall (July to June) has been used in this dashboard because
@@ -55,7 +54,7 @@ ui <- fluidPage(
                           h4("How to use this Dashboard:"),
                           tags$ul(
                             tags$li(strong("Slider:"), " Use the sidebar to filter the date range for all charts and tables."),
-                            tags$li(strong("Interactive Plots:"), " Hover over bars to see specific Financial Year (July-June) totals."),
+                            tags$li(strong("Interactive Plots:"), " Hover over bars and lines to see specific Financial Year (July-June) totals."),
                             tags$li(strong("Anomalies:"), " View departures from the long-term mean (Blue = Wet, Red = Dry)."),
                             tags$li(strong("Rainy Days:"), " Rank years by the frequency of rainy days in the final tab.")
                           ),
