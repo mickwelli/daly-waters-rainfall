@@ -23,4 +23,4 @@ jobs:
       - name: Authorize and Deploy
         run: |
           Rscript -e "rsconnect::setAccountInfo(name='${{ secrets.SHINYAPPS_ACCOUNT }}', token='${{ secrets.SHINYAPPS_TOKEN }}', secret='${{ secrets.SHINYAPPS_SECRET }}')"
-          Rscript -e "rsconnect::deployApp(appName='daly-waters-rainfall')"
+          Rscript -e "rsconnect::deployApp(appName='daly-waters-rainfall', forceUpdate = TRUE)"
