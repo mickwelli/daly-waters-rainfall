@@ -14,7 +14,7 @@ start_town_2 <- 19700101
 end_town_2 <- 19991231
 
 start_air_2 <- 20000101
-end_air_2 <- 20260301
+end_air_2 <- 20260311
 
 # 1. Get town period 1 (1889 - 1960)
 
