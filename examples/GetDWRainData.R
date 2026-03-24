@@ -1,7 +1,10 @@
-library(tidyverse)
+library(dplyr)
+library(readr)
+library(lubridate)
+library(purrr)
 
-dwairstrip <- 014626 # From 1960 - 1970 & from 2000, use 014626 dwairstrip
-dwtown <- 014618 # From 1889 - 1960 & 1970 - 2000, use 014618 dwtown
+dwairstrip <- "014626" # From 1960 - 1970 & from 2000, use 014626 dwairstrip
+dwtown <- "014618" # From 1889 - 1960 & 1970 - 2000, use 014618 dwtown
 email <- "mickwelli@hotmail.com"
 
 start_town_1 <- 18890101
