@@ -13,8 +13,11 @@ end_air_1 <- 19691231
 start_town_2 <- 19700101
 end_town_2 <- 19991231
 
+# end day is today
+today_formatted <- format(Sys.Date(), "%Y%m%d")
+
 start_air_2 <- 20000101
-end_air_2 <- 20260311
+end_air_2 <- today_formatted
 
 # 1. Get town period 1 (1889 - 1960)
 
