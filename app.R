@@ -14,7 +14,14 @@ for (f in files) {
 }
 
 # 2. Load clean data
-df <- readRDS("data/Rain_DW.rds") %>%
+# Define the raw GitHub URL
+github_url <- "https://raw.githubusercontent.com/mickwelli/daly-waters-rainfall/main/data/Rain_DW.rds"
+
+# Download to a temporary file and read it
+tmp <- tempfile(fileext = ".rds")
+download.file(github_url, tmp, mode = "wb", quiet = TRUE)
+
+df <- readRDS(tmp) %>%
   mutate(
     Date = as.Date(Date),
     Rain = as.numeric(Rain),
