@@ -29,6 +29,8 @@ df <- readRDS(tmp) %>%
   )
 
 # --- UI Section ---
+max_data_fy <- max(df$FY_Year, na.rm = TRUE)
+
 ui <- fluidPage(
   titlePanel("Daly Waters Rainfall Dashboard"),
 
@@ -38,7 +40,7 @@ ui <- fluidPage(
       sliderInput("yearRange", "Financial Year Range:",
                   min = min(df$FY_Year, na.rm = TRUE),
                   max = max(df$FY_Year, na.rm = TRUE),
-                  value = c(1889, 2026),
+                  value = c(1889, max_data_fy), 
                   sep = ""),
       hr(),
       p("The slider filters both the annual totals and the anomalies simultaneously.")
